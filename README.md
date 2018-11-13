@@ -7,3 +7,10 @@ authors:
 Bianca Henderson (@beeankha) 
 Jake Jackson (@thedoubl3j)
 John Lieske (@johnlieske) 
+
+
+## Tutorials We're Working With:
+
+https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html
+
+https://tannerjc.net/wiki/index.php?title=Ansible_Developer_Filament
