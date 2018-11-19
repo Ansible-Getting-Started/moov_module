@@ -3,23 +3,25 @@
 # Copyright: (c) 2018, [OUR NAMES] <[OUR NAMES]@example.org>
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 
-ANSIBLE_METADATA = {
-    'metadata_version': '1.1',
-    'status': ['preview'],
-    'supported_by': 'community'
-}
+from __future__ import absolute_import, division, print_function
+__metaclass__ = type
+
+ANSIBLE_METADATA = {'metadata_version': '1.1',
+                    'status': ['preview'],
+                    'supported_by': 'community'}
 
 DOCUMENTATION = '''
 ---
 module: move
 
-short_description: This is my sample module
+short_description: Moves files
 
-version_added: "2.4"
+version_added: "2.8"
 
 description:
-    - "This is my longer description explaining my sample module"
-
+    - The C(move) module moves, or renames, files on the local or remote machine or on the remote machine.
+      Use the M(fetch) module to copy files from remote locations to the local box.
+      If you need variable interpolation in copied files, use the M(template) module instead.
 options:
     name:
         description:
@@ -34,7 +36,9 @@ extends_documentation_fragment:
     - azure
 
 author:
-    - Your Name (@yourhandle)
+    - Bianca Henderson (@yourhandle)
+    - John Lieske (@JohnLieske)
+    - Jake Jackson(@thedoubl3j)
 '''
 
 EXAMPLES = '''
