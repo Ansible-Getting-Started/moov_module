@@ -36,7 +36,7 @@ extends_documentation_fragment:
     - azure
 
 author:
-    - Bianca Henderson (@yourhandle)
+    - Bianca Henderson (@beeankha)
     - John Lieske (@JohnLieske)
     - Jake Jackson(@thedoubl3j)
 '''
