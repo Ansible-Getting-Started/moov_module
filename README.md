@@ -20,9 +20,9 @@ John Lieske (@johnlieske)
 
 ## Next Steps:
 
-* X
-* Y
-* Z
+* define examples
+* figure out focus areas for what we need to accomplish
+* assign working areas and begin development
 
 
 ## Tutorials We're Working With:
