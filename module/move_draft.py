@@ -19,7 +19,7 @@ short_description: Moves files
 version_added: "2.8"
 
 description:
-    - The C(move) module moves, or renames, files on the local or remote machine or on the remote machine.
+    - The C(move) module moves, or renames, files and directories on the local or on a remote machine's filesystem.
       Use the M(fetch) module to copy files from remote locations to the local box.
       If you need variable interpolation in copied files, use the M(template) module instead.
 options:
@@ -32,31 +32,42 @@ options:
             - Control to demo if the result of this module is changed or not
         required: false
 
-extends_documentation_fragment:
-    - azure
 
-author:
+author(s):
     - Bianca Henderson (@beeankha)
     - John Lieske (@JohnLieske)
     - Jake Jackson(@thedoubl3j)
 '''
 
 EXAMPLES = '''
-# Pass in a message
-- name: Test with a message
-  my_new_test_module:
-    name: hello world
+# Move a file from source to a new destination
+- name: Move with permissions
+  move:
+    src: /etc/app/fake.conf
+    dest: /etc/app1/fake.conf
+    owner: cow
+    group: cowsay
+    mode: 0644
 
-# pass in a message and have changed true
-- name: Test with a message and changed output
-  my_new_test_module:
-    name: hello world
-    new: true
+# Move a file, same examples as above with symbolic mode equal to 0644
+- name: Move with symbolic permissions
+  move:
+    src: /etc/app/fake.conf
+    dest: /etc/app1/fake.conf
+    owner: cow
+    group: cowsay
+    mode: u=rw,g=r,o=r
 
-# fail the module
-- name: Test failure of the module
-  my_new_test_module:
-    name: fail me
+# Move a file while adding and removing some persissions in symbolic mode
+- name: Move file and change permissions
+  move:
+    src: /etc/app/fake.conf
+    dest: /etc/app1/fake.conf
+    owner: cow
+    group: cowsay
+    mode: u+rw,g-wx,o-rwx
+
+
 '''
 
 RETURN = '''
