@@ -67,6 +67,34 @@ EXAMPLES = '''
     group: cowsay
     mode: u+rw,g-wx,o-rwx
 
+# Move a file and create a back up at the source location
+- name: move a file and create a back up
+  move:
+    src: /mine/httpd.conf
+    dest: /etc/httpd.conf
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+
+#Renaming a file
+# Move a file from source to a new destination
+- name: Renaming a file
+  move:
+    src: /etc/app/fake.conf
+    dest: /etc/app/fake1.conf
+    owner: cow
+    group: cowsay
+    mode: 0644
+
+#Move multiple files into one directory
+- name: Move files into one directory_mode
+  move:
+    src: files={{items}}
+    with_items
+      - path/to/file1
+      - path/to/file2
+    dest: /path/to/new/dir
 
 '''
 
