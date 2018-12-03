@@ -20,9 +20,10 @@ John Lieske (@johnlieske)
 
 ## Next Steps:
 
-* define examples
-* figure out focus areas for what we need to accomplish
-* assign working areas and begin development
+* define examples (we need more)
+* John to work on documentation and start updating the parameters box
+* Jake to start working on initial commit and cleaning up the example module
+* Bianca reviewing and finalize the merge (webinar weeks) 
 
 
 ## Tutorials We're Working With:
