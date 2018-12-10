@@ -106,7 +106,19 @@ message:
     description: The output message that the sample module generates
 '''
 
+import os
+import os.path
+import shutil
+import filecmp
+import pwd
+import grp
+import stat
+import errno
+import tempfile
+import traceback
+
 from ansible.module_utils.basic import AnsibleModule
+from ansible.module_utils._text import to_bytes, to_native
 
 def run_module():
     # define available arguments/parameters a user can pass to the module
