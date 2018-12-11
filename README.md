@@ -21,9 +21,9 @@ John Lieske (@johnlieske)
 ## Next Steps:
 
 * define examples (we need more)
-* John to work on documentation and start updating the parameters box
-* Jake to start working on initial commit and cleaning up the example module
-* Bianca reviewing and finalize the merge (webinar weeks) 
+* John to start working on first feature
+* Jake to work on Documentation 
+* Bianca reviewing and finalize the merge (webinar weeks)
 
 
 ## Tutorials We're Working With:
