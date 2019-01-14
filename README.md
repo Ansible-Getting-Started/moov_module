@@ -21,9 +21,9 @@ John Lieske (@johnlieske)
 ## Next Steps:
 
 * define examples (we need more)
-* John to start working on first feature
-* Jake to work on Documentation 
-* Bianca reviewing and finalize the merge (webinar weeks)
+* John doing review
+* Jake to work on Documentation and review
+* Bianca working on first pass of delete function
 
 
 ## Tutorials We're Working With:
