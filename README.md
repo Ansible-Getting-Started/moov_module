@@ -21,9 +21,10 @@ John Lieske (@johnlieske)
 ## Next Steps:
 
 * Define examples (we need more)
-* John doing review
-* Jake to work on Documentation and review
-* Bianca working on first pass of `delete` function
+* Tests should start getting worked on
+* John doing testing and editing
+* Jake to write tests and editing
+* Bianca doing review
 
 
 
