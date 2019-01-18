@@ -26,6 +26,7 @@ John Lieske (@johnlieske)
 * Bianca working on first pass of `delete` function
 
 
+
 ## Tutorials We're Working With:
 
 https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html
