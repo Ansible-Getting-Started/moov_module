@@ -20,10 +20,11 @@ John Lieske (@johnlieske)
 
 ## Next Steps:
 
-* define examples (we need more)
+* Define examples (we need more)
 * John doing review
 * Jake to work on Documentation and review
-* Bianca working on first pass of delete function
+* Bianca working on first pass of `delete` function
+
 
 
 ## Tutorials We're Working With:
